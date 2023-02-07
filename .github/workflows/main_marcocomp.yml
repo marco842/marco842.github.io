@@ -1,57 +1,71 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
-
-name: Build and deploy ASP.Net Core app to Azure Web App - marcocomp
-
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: windows-latest
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Set up .NET Core
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: '6.0.x'
-          include-prerelease: true
-
-      - name: Build with dotnet
-        run: dotnet build --configuration Release
-
-      - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
-
-      - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v2
-        with:
-          name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
-
-  deploy:
-    runs-on: windows-latest
-    needs: build
-    environment:
-      name: 'Production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-
-    steps:
-      - name: Download artifact from build job
-        uses: actions/download-artifact@v2
-        with:
-          name: .net-app
-
-      - name: Deploy to Azure Web App
-        id: deploy-to-webapp
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: 'marcocomp'
-          slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CB9C2A5D3ECD4A3B9A964AB2A5D11481 }}
-          package: .
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Mi Primera Pagina</title>
+</head>
+<head>
+    <h1>Galeria de imagenes</h1>
+    <h2>Flores del Ecuador</h2>
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+        <li>
+            <a href="https://carontestudio.com/blog/listado-de-etiquetas-html/">Inicio</a>
+        </li>
+        <li>
+            <a href="">Quienes Somos</a>
+        </li>
+        <li>
+            <a href="">Blog</a>
+        </li>
+        <li>
+            <a href="">Contactos</a>
+        </li>
+    </ul>
+    </nav>
+    <section>
+        <figure>
+            <img src="imagenes/imagenes-png.png">
+                    Foto 1:
+                </figcaption>
+            </img>
+        </figure>
+        <figure>
+            <img src="imagenes/Imagenes-Lilo-y-Stitch-png.png">
+                <figcaption>
+                    Foto 2:
+                </figcaption>
+            </img>
+        </figure>
+        <figure>
+            <img src="imagenes/Gothic-Tattoos-Free-Download-PNG.png">
+                <figcaption>
+                    Foto 3:
+                </figcaption>
+            </img>
+        </figure>
+        <figure>
+            <img src="imagenes/418943.jpg">
+                <figcaption>
+                    Foto 4:
+                </figcaption>
+            </img>
+        </figure>
+        <figure>
+            <img src="">
+                <figcaption>
+                    Foto 5:
+                </figcaption>
+            </img>
+        </figure>
+        
+    </section>    
+</body>
+</html>
