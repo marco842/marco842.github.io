@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>LOS DINOSAURIOS</title>
+</head>
+<head>
+    <h1>DINOSAURIOS</h1>
+    <h2>Galeria de imagenes</h2>
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+        <li>
+            <a href="https://www.nationalgeographic.es/historia/la-extincion-de-los-dinosaurios">Extincion</a>
+        </li>
+        <li>
+            <a href="https://www.dinosaurios.info/d-tipos-dinosaurios.html">Tipos</a>
+        </li>
+        <li>
+            <a href="https://ingeoexpert.com/2019/06/14/fosiles-de-dinosaurios-en-el-mundo/">Fósiles</a>
+        </li>
+        <li>
+            <a href="https://poki.com/es/g/rio-rex">Juego</a>
+        </li>
+    </ul>
+    </nav>
+    <section>
+        <figure>
+            <img src="imagenes/tipos-especies-dinosaurios.jpg">
+            SAURISQUIOS O DINOSAURIOS DE CADERA DE LAGARTO:
+                </figcaption>
+            </img>
+        </figure>
+        <figure>
+            <img src="imagenes/tipos-de-dinosaurios.jpg">
+                <figcaption>
+                    DIPLODOCUS (DIPLODOCUS LONGUS):
+                </figcaption>
+            </img>
+        </figure>
+        <figure>
+            <img src="imagenes/especies-tipos-dinosaurios.jpg">
+                <figcaption>
+                    TIRANOSAURIO (TYRANNOSAURUS REX):
+                </figcaption>
+            </img>
+        </figure>
+        <figure>
+            <img src="imagenes/dinosaurios.jpg">
+                <figcaption>
+                    CORITOSAURIO (CORYTHOSAURUS CASUARIUS):
+                </figcaption>
+            </img>
+        </figure>
+        <figure>
+            <img src="imagenes/dibujo-triceratops.jpg">
+                <figcaption>
+                    TRICERATOPS (TRICERATOPS HORRIDUS):
+                </figcaption>
+            </img>
+        </figure>
+        <figure>
+            <img src="imagenes/dinosaurios-ornitisquios-ornithischia-con-cadera-de-ave.jpg">
+                <figcaption>
+                    ORNITISQUIOS O DINOSAURIOS DE CADERA DE AVE:
+                </figcaption>
+    </section>    
+</body>
+</html>
